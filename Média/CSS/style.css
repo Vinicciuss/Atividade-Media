@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(13, 13, 13);
+}
+
+header {
+    background: rgb(1, 189, 247);
+    text-align: center;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.box {
+    background: #ffffff;
+    width: 600px;
+    font-family: monospace;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top:60px;
+    box-shadow: 1em 1em 2em  rgb(1, 189, 247);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tabela {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: left;
+    background: #044afa;
+    color: #ffffff;
+}
+
+td, th {
+    padding: 10px 10px;
+    border: 1px solid #1034c4;
+}
+
+.grupo {
+    position: relative;
+    left: 160px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.imput-1 {
+    display: block;
+    border: 1px solid #044afa;
+    padding: 10px 15px;
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.botao {
+    position: relative;
+    left: 41%;
+    margin-top: 25px;
+    background: rgb(11, 139, 237);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0.2em 0.2em 0.0em rgb(2, 61, 105);
+    transition: 0.2s;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background: rgb(5, 105, 182);
+}
+.botao:active {
+    box-shadow: 0.0em 0.0em 0.0em #000000b1
+}
+
+footer {
+    background: rgb(1, 189, 247);
+    text-align: center;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 10%;
+}
