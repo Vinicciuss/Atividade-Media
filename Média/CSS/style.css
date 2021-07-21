@@ -89,6 +89,10 @@ label {
     box-shadow: 0.0em 0.0em 0.0em #000000b1
 }
 
+.invisivel {
+    display: none;
+}
+
 footer {
     background: rgb(1, 189, 247);
     text-align: center;
