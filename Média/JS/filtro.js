@@ -1,27 +1,28 @@
-var camp_fill = document.querySelector("#filtrar-tabela");
+var campo_fill = document.querySelector("#filtrar-tabela");
 
-camp_fill.addEventListener("input", function() {
+campo_fill.addEventListener("input", function() {
     var alunos = document.querySelectorAll(".aluno");
 
-    if (this.value.length > 0) {
+    if(this.value.length > 0) {
         for (var i = 0; i < alunos.length; i++) {
             var aluno = alunos[i];
-            
+
             var tdNome = aluno.querySelector(".inf-nome");
             var nome = tdNome.textContent;
 
-            var exp = new RegExp(this.value, "i");
+            var expressao = new RegExp(this.value, "i");
 
-            if (exp.test(nome)) {
+            if (expressao.test(nome)) {
                 aluno.classList.remove("invisivel");
             } else {
                 aluno.classList.add("invisivel");
             }
         }
     } else {
-            for (var i = 0; i < alunos.length; i++) {
-                var aluno = alunos[i];
-                aluno.classList.remove("invisivel");
-            }
+        for (var i = 0; i < alunos.length; i++) {
+            var aluno = alunos[i];
+            aluno.classList.remove("invisivel");
         }
+    }
+
 });
